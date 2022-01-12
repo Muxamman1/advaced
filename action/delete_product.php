@@ -1,1 +1,0 @@
-<?php   if ($_SERVER['REQUEST_METHOD']=='GET'){       $id = $_GET['id'];       $con = require "../database.php";       $sql = "delete from product where id = $id";       $result  = $con->query($sql);       if ($result){           header("location:../admin.php");       }else{           echo "error";       }   }

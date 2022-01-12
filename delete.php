@@ -1,1 +1,0 @@
-<?php   if ($_SERVER["REQUEST_METHOD"]=='GET'){       $id = &$_GET['id'];       $con = new mysqli("localhost","root","12345678","ict");       $sql = "delete from guruh where id = $id";       $result = $con->query($sql);       if ($result){           header("location:index.php");       }   }

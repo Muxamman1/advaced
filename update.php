@@ -1,1 +1,0 @@
-<?php  $id =  $name = '';  if ($_SERVER["REQUEST_METHOD"]=='POST'){      $id = $_POST['id'];      $name = $_POST['name'];       $con = new mysqli("localhost",'root','12345678','ict');       $sql  = "update guruh set name = '$name' where id = $id";       $result = $con->query($sql);       if ($result){           header("location:index.php");       }  }

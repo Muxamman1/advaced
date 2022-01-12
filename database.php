@@ -1,1 +1,0 @@
-<?php$con = new mysqli("localhost","root","12345678","data");return $con;
